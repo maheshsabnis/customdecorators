@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "CustomDecorators"
+    }
+  },
+  "defaultProject": "CustomDecorators",
+  "cli": {
+    "analytics": "dfd7f33d-f75d-4382-b091-2f5156db9d37"
+  }
 }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import {logMethod} from './customdecorators/methoddecorator';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CustomDecorators';
+
+  @logMethod()
+  display(): void {
+    console.log('The Display Method');
+    for(let key in this) {
+      console.log(key);
+    }
+  }
 }
